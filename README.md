@@ -2,10 +2,6 @@
 
 > Yıldızların altında günlük rehberin.
 
-AstroRehber, kullanıcının doğum tarihi, saati ve yerine göre **gerçek astronomik hesaplamalarla** doğum haritasını çıkartan, her gün kişiye özel kısa bir astroloji tavsiyesi sunan ve yaklaşan astrolojik olayları (dolunay, yeni ay, tutulma, retro vb.) bildiren bir Android uygulamasıdır.
-
-Tamamen **offline** çalışır — hiçbir API'ye bağımlı değildir.
-
 ## Özellikler
 
 - **Manuel burç girişi**: Güneş, Ay, Yükselen ve Venüs burcunu bir kez seç — uygulama hatırlar.
@@ -52,27 +48,4 @@ app/src/main/java/com/astrorehber/
     ├── home/                 # Ana ekran (günlük + olay)
     ├── chart/                # Doğum haritası çemberi
     └── events/               # Olaylar listesi
-```
 
-## Astronomik Hassasiyet
-
-Bu uygulama Paul Schlyter'ın temel yörünge öğeleri (Keplerian) tabanlı algoritmasını kullanır:
-
-- Güneş: ~ 1 yay-dakika
-- Ay: ~ 2-5 yay-dakika (büyük pertürbasyonlar dahil)
-- İç gezegenler (Merkür–Mars): birkaç yay-dakika
-- Dış gezegenler (Jüpiter–Pluto): ~ 0.5°
-
-Günlük rehber ve doğum haritası gösterimi için fazlasıyla yeterlidir. Profesyonel astrolojik araştırma için Swiss Ephemeris entegrasyonu eklenebilir.
-
-## Yol Haritası
-
-- [ ] Bildirim: günlük tavsiye için günde bir push.
-- [ ] Birden çok profil (aile üyeleri).
-- [ ] Swiss Ephemeris opsiyonel modülü.
-- [ ] Olay kataloğunu otomatik üretmek (bir sonraki dolunayı dinamik hesaplama).
-- [ ] Transit tarayıcı: bugünkü gezegen geçişlerinin haritana etkisi.
-
-## Lisans
-
-MIT
